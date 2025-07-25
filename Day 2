@@ -8,3 +8,7 @@ where id%2=0;
 
 Find the difference between the total number of CITY entries in the table and the number of distinct CITY entries in the table.
 select count(CITY) -  count (distinct CITY )from station ;
+
+Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
+select distinct CITY from STATION
+where CITY like 'a%' or CITY like 'e%' or CITY like 'i%' or CITY like 'o%' or CITY LIKE 'u%';
