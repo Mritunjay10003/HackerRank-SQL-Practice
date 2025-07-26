@@ -5,3 +5,7 @@ where  lower(left(CITY,1)) IN ('a','e','i','o','u') and lower(right(CITY,1)) IN 
 Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
 select distinct CITY from STATION 
 where left(CITY,1) NOT IN ('a','e','i','o','u');
+
+Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain duplicates.
+select distinct CITY from STATION 
+where right(CITY,1) NOT IN ('a','e','i','o','u')
