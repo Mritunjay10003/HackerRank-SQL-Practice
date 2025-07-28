@@ -6,3 +6,6 @@ where DISTRICT='California'
 Query the average population of all cities in CITY where District is California.
 select avg(POPULATION) from CITY
 where District='California'
+
+Query the average population for all cities in CITY, rounded down to the nearest integer.
+select round(avg(POPULATION)) from CITY
