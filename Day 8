@@ -2,8 +2,14 @@ Query a count of the number of cities in CITY having a Population larger than 10
 select COUNT(CITY)
 from STATION where POPULATION>1000000
 
-Query the smallest Northern Latitude (LAT_N) from STATION that is greater than . Round your answer to 4  decimal places.
+Query the smallest Northern Latitude (LAT_N) from STATION that is greater than 38.7780 . Round your answer to 4  decimal places.
 select ROUND(LAT_N,4) from STATION
+where LAT_N > 38.7780
+order by LAT_N
+LIMIT 1
+
+Query the Western Longitude (LONG_W)where the smallest Northern Latitude (LAT_N) in STATION is greater than 39.7780 . Round your answer to 4 decimal places.
+select ROUND(LONG_W,4) from STATION
 where LAT_N > 38.7780
 order by LAT_N
 LIMIT 1
