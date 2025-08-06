@@ -20,3 +20,9 @@ where LAT_N < 137.2345
 order by LAT_N desc
 LIMIT 1
 
+Given the CITY and COUNTRY tables, query the sum of the populations of all cities where the CONTINENT is 'Asia'.
+select sum(c.POPULATION)
+from CITY as C 
+inner join COUNTRY as cc on
+c.CountryCode=cc.Code
+where cc.CONTINENT='Asia'
